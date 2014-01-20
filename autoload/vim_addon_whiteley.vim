@@ -24,6 +24,8 @@ function! vim_addon_whiteley#Activate()
 
   call vam#ActivateAddons(addons)
 
+  set backspace=indent,eol,start
+
   set background=dark
   colorscheme hemisu
 
@@ -31,7 +33,11 @@ function! vim_addon_whiteley#Activate()
     set antialias
     set autoread
     set gcr=a:blinkwait0
-    set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+    if os == 'mac'
+      set guifont=Source\ Code\ Pro\ for\ Powerline:h12
+    elseif os == 'unix'
+      set guifont=Source\ Code\ Pro\ 10
+    endif
     set visualbell
     autocmd VimEnter * NERDTree
     autocmd VimEnter * wincmd p
@@ -39,7 +45,7 @@ function! vim_addon_whiteley#Activate()
   endif
   let g:airline_powerline_fonts = 1
 
-  let mapleader = ","
+  let g:mapleader = ","
 
   set number
   set ruler
