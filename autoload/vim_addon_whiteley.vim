@@ -14,6 +14,7 @@ function! vim_addon_whiteley#Activate()
         \ "github:scrooloose/syntastic",
         \ "github:tomtom/tcomment_vim",
         \ "github:tpope/vim-eunuch",
+        \ "github:elixir-lang/vim-elixir",
         \ "github:tpope/vim-fugitive",
         \ "github:tpope/vim-rails",
         \ "github:tpope/vim-unimpaired",
