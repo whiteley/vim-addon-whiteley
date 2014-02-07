@@ -36,7 +36,7 @@ function! vim_addon_whiteley#Activate()
     if os == 'mac'
       set guifont=Source\ Code\ Pro\ for\ Powerline:h12
     elseif os == 'unix'
-      set guifont=Source\ Code\ Pro 10
+      set guifont=Source\ Code\ Pro\ 10
     endif
     set visualbell
     autocmd VimEnter * NERDTree
