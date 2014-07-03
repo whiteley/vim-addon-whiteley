@@ -6,7 +6,7 @@ This was **not** designed to play well with existing configurations.
 
 1. Grab config
 
-        curl -o ~/.vimrc https://raw.github.com/whiteley/vim-addon-whiteley/master/vimrc.vim
+        curl -Lo ~/.vimrc https://raw.github.com/whiteley/vim-addon-whiteley/master/vimrc.vim
 OR
 
         wget -O ~/.vimrc https://raw.github.com/whiteley/vim-addon-whiteley/master/vimrc.vim
