@@ -26,8 +26,6 @@ function! vim_addon_whiteley#Activate()
 
   call vam#ActivateAddons(addons)
 
-  set backspace=indent,eol,start
-
   set background=dark
   colorscheme hemisu
 
@@ -50,7 +48,6 @@ function! vim_addon_whiteley#Activate()
   let g:mapleader = ","
 
   set number
-  set ruler
 
   set tabstop=2
   set shiftwidth=2
@@ -58,11 +55,8 @@ function! vim_addon_whiteley#Activate()
   set expandtab
 
   set smartindent
-  set autoindent
   set foldenable
-  set scrolloff=4
 
-  set laststatus=2
   set linespace=3
 
   set wrap
@@ -71,7 +65,6 @@ function! vim_addon_whiteley#Activate()
 
   set hlsearch
   set ignorecase
-  set incsearch
   set smartcase
 
   map <leader>c <c-_><c-_>
