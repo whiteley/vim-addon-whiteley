@@ -35,9 +35,9 @@ function! vim_addon_whiteley#Activate()
     set antialias
     set autoread
     set gcr=a:blinkwait0
-    if os == 'mac'
+    if has('macunix')
       set guifont=Source\ Code\ Pro\ for\ Powerline:h12
-    elseif os == 'unix'
+    elseif has('unix')
       set guifont=Source\ Code\ Pro\ 10
     endif
     set visualbell
